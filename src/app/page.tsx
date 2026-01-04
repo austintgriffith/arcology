@@ -151,6 +151,7 @@ export default function Home() {
                 fontWeight: 400,
                 letterSpacing: "0.05em",
                 color: "#000000",
+                paddingLeft: "1rem",
               }}
             >
               ethereum
@@ -184,6 +185,7 @@ export default function Home() {
                 fontWeight: 400,
                 letterSpacing: "0.05em",
                 color: "#000000",
+                paddingLeft: "1rem",
               }}
             >
               arcology
