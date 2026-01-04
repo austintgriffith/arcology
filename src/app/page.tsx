@@ -69,10 +69,10 @@ export default function Home() {
       <div
         style={{
           position: "absolute",
-          bottom: "100vh",
+          bottom: "90vh",
           left: 0,
           right: 0,
-          height: "100vh",
+          height: "280vh",
           background:
             "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.7) 70%, #000000 100%)",
           pointerEvents: "none",
