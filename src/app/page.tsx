@@ -62,6 +62,7 @@ export default function Home() {
           transform: `translateY(-${parallaxOffset}px)`,
           willChange: "transform",
           zIndex: -1,
+          pointerEvents: "none",
         }}
       />
       {/* Bottom gradient overlay that fades to black */}
