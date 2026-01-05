@@ -38,6 +38,14 @@ export default function Home() {
   // Wide screens: less zoomed (down to 120%)
   const bgZoom = Math.max(120, Math.min(180, 150 / aspectRatio));
 
+  // Calculate responsive font size for scroll-by titles
+  // Scale aggressively to prevent text from wrapping
+  // At 800px: ~2rem, at 375px (phone): ~0.95rem
+  const scrollTitleFontSize = `${Math.max(
+    0.75,
+    Math.min(3.5, windowSize.width / 400)
+  )}rem`;
+
   return (
     <main
       style={{
@@ -289,11 +297,12 @@ export default function Home() {
               position: "relative",
               zIndex: 1,
               fontFamily: '"Major Mono Display", monospace',
-              fontSize: "3.5rem",
+              fontSize: scrollTitleFontSize,
               fontWeight: 400,
               letterSpacing: "0.05em",
               color: "#000000",
               paddingLeft: "2rem",
+              whiteSpace: "nowrap",
             }}
           >
             2 month virtual program
@@ -331,11 +340,12 @@ export default function Home() {
                 position: "relative",
                 zIndex: 1,
                 fontFamily: '"Major Mono Display", monospace',
-                fontSize: "3.5rem",
+                fontSize: scrollTitleFontSize,
                 fontWeight: 400,
                 letterSpacing: "0.05em",
                 color: "#000000",
                 paddingRight: "2rem",
+                whiteSpace: "nowrap",
               }}
             >
               ship apps onchain
@@ -367,11 +377,12 @@ export default function Home() {
               position: "relative",
               zIndex: 1,
               fontFamily: '"Major Mono Display", monospace',
-              fontSize: "3.5rem",
+              fontSize: scrollTitleFontSize,
               fontWeight: 400,
               letterSpacing: "0.05em",
               color: "#000000",
               paddingLeft: "2rem",
+              whiteSpace: "nowrap",
             }}
           >
             no prizes
@@ -409,11 +420,12 @@ export default function Home() {
                 position: "relative",
                 zIndex: 1,
                 fontFamily: '"Major Mono Display", monospace',
-                fontSize: "3.5rem",
+                fontSize: scrollTitleFontSize,
                 fontWeight: 400,
                 letterSpacing: "0.05em",
                 color: "#000000",
                 paddingRight: "2rem",
+                whiteSpace: "nowrap",
               }}
             >
               founder support
@@ -445,11 +457,12 @@ export default function Home() {
               position: "relative",
               zIndex: 1,
               fontFamily: '"Major Mono Display", monospace',
-              fontSize: "3.5rem",
+              fontSize: scrollTitleFontSize,
               fontWeight: 400,
               letterSpacing: "0.05em",
               color: "#000000",
               paddingLeft: "2rem",
+              whiteSpace: "nowrap",
             }}
           >
             accelerator access
@@ -487,11 +500,12 @@ export default function Home() {
                 position: "relative",
                 zIndex: 1,
                 fontFamily: '"Major Mono Display", monospace',
-                fontSize: "3.5rem",
+                fontSize: scrollTitleFontSize,
                 fontWeight: 400,
                 letterSpacing: "0.05em",
                 color: "#000000",
                 paddingRight: "2rem",
+                whiteSpace: "nowrap",
               }}
             >
               apply today
