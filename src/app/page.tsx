@@ -305,7 +305,7 @@ export default function Home() {
               whiteSpace: "nowrap",
             }}
           >
-            2 month virtual program
+            3 months virtual
           </span>
         </div>
 
